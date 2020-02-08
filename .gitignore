@@ -1,2 +1,3 @@
 .gitsecret/keys/random_seed
 src/app/components/map/map.component.ts
+src/app/app.module.ts
