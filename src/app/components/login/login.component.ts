@@ -16,14 +16,14 @@ export class LoginComponent implements OnInit {
   constructor(public afAuth: AngularFireAuth, private router: Router) { }
 
   doTwitterLogin() {
-    console.log('pee');
+    // console.log('pee');
     return new Promise<any>((resolve, reject) => {
       let provider = new firebase.auth.TwitterAuthProvider();
       this.afAuth.auth
       .signInWithPopup(provider)
       .then(res => {
         resolve(res);
-        console.log('po');
+        // console.log('po');
         this.router.navigateByUrl('/member-home');
       }, err => {
         console.log(err);
