@@ -24,7 +24,7 @@ export class LoginComponent implements OnInit {
       .then(res => {
         resolve(res);
         console.log('po');
-        this.router.navigateByUrl('/about');
+        this.router.navigateByUrl('/member-home');
       }, err => {
         console.log(err);
         reject(err);
