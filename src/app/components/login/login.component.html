@@ -1,21 +1,30 @@
 <!-- <p>login works!</p> -->
-<html>
+<html style="background-color: rgb(173,216,230); height: 100vh;">
     <head>
         <style>
-            html {
+            /* html {
                 height: auto;
                 background-color: rgb(173,216,230);
-            }  
+            }   */
         </style>
     </head>
     <body>
-        <div class="container" style="height: 946px; width: 25%;">
+        <div class="container" style="width: 25%;">
             <div class="section">
-                <div class="tile is-ancestor">
+                <div class="tile is-ancestor" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);">
                     <div class="tile is-parent">
                         <article class="tile is-child notification">
-                            pee
-                            <button class="button is-info" (click)="doTwitterLogin()">peepee</button>
+                            <p class="title is-4 has-text-centered"> <span>Homeworld</span> <span class="icon"> <i class="fas fa-globe-americas"></i></span></p>
+                            <p>Homeworld^tm is a web application which uses Twitter <br>
+                            to display data aroung the world in a meaningful way. <br>
+                            To display the Twitter feed of the events we display, <br>
+                            please login to your Twitter account or create one <a href="https://twitter.com/i/flow/signup" style="color: blue;">here.</a></p>
+                            <br>
+                            <br>
+                            <button class="button is-info has-text-centered is-fullwidth" (click)="doTwitterLogin()">
+                                <span>Login Twitter</span><span class="icon"> <i class="fab fa-twitter"></i> </span>
+                            </button>
+                            <br>
                         </article>
                     </div>
                 </div>
